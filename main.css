@@ -30,8 +30,7 @@ body {
 
 #url input[type=text] {
 	width: 297px;
-	height: 23px;
-	padding: 6px;
+	padding: 8px;
 	background-color: #333;
 	border: #777 1px solid;
 	color: #eee;
@@ -41,13 +40,12 @@ body {
 
 #url input[type=submit] {
 	width: 80px;
-	height: 37px;
-	padding: 6px;
+	padding: 8px;
 	background-color: #232323;
 	border: #777 1px solid;
 	color: #eee;
 	border-radius: 3px;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 #url input[type=submit]:hover {
