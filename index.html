@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Moka moka</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/black-tie/jquery-ui.min.css"/>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<div id="head">
+		<div id="header">
+			<form id="url">
+				<input type="text" value="http://trufcreative.com/"/>
+				<input type="submit" value="Test"/>
+			</form>
+			<span id="current-width"></span>
+		</div>
+		<div id="devices">
+			<div class="inner">
+				<span class="title">Set device width:</span>
+				<a href="#" data-width="320">iPhone 3,3GS</a> (<a href="#" data-width="480">Landscape</a>)
+				<a href="#" data-width="640">iPhone 4,4S,5</a> (<a href="#" data-width="960">Landscape</a>, <a href="#" data-width="1136">Landscape iPhone 5</a>)
+				<a href="#" data-width="1024">iPad 1,2,Mini</a> (<a href="#" data-width="768">Landscape</a>)
+				<a href="#" data-width="2048">iPad 3,4</a> (<a href="#" data-width="1536">Landscape</a>)
+				<br />
+				<span class="title">Choose device:</span>
+				<a href="#" data-width="320" data-height="480">iPhone 3,3GS</a> (<a href="#" data-width="480" data-height="320">Landscape</a>)
+				<a href="#" data-width="640" data-height="960">iPhone 4,4S</a> (<a href="#" data-width="960" data-height="640">Landscape</a>)
+				<a href="#" data-width="640" data-height="1136">iPhone 5</a> (<a href="#" data-width="1136" data-height="640">Landscape</a>)
+				<a href="#" data-width="1024" data-height="768">iPad 1,2,Mini</a> (<a href="#" data-width="768" data-height="1024">Landscape</a>)
+				<a href="#" data-width="2048" data-height="1536">iPad 3,4</a> (<a href="#" data-width="1536" data-height="2048">Landscape</a>)
+			</div>
+		</div>
+		<div id="ruler">
+			<div class="inner"></div>
+		</div>
+	</div>
+	<div id="frame-wrapper">
+		<div id="frame">
+			<iframe></iframe>
+		</div>
+	</div>
+</body>
+</html>
