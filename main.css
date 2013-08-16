@@ -9,6 +9,10 @@ body {
 	background-color: #333;
 }
 
+#head {
+    min-width: 980px;
+}
+
 #header {
 	width: 100%;
 	height: 55px;
@@ -56,9 +60,37 @@ body {
 
 #devices {
 	width: 100%;
-	background-color: #333;
+	background-color: #223;
 	color: #999;
 	border-bottom: #484848 1px solid;
+}
+
+#scale {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -8px;
+}
+
+#scale .title {
+    display: inline-block;
+    padding-bottom: 2px;
+    color: #eee;
+    font-size: 13px;
+}
+
+#scale .slider {
+    width: 100px;
+    background: #666;
+    border: #777 1px solid;
+    border-radius: 3px;
+}
+
+#scale .ui-slider-handle {
+    margin-top: 1px;
+    background: #232323;
+    border: #aaa 1px solid;
+    border-radius: 3px;
 }
 
 #devices .inner {

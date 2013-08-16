@@ -51,6 +51,33 @@ $(document).ready(function() {
 		)
 	}
 
+    //Scale slider
+    $("#scale .slider").slider({
+        min: -1,
+        max: 1,
+        step: 0.2,
+        value: 0,
+        slide: function( event, ui ) {
+            var scale = 1
+            if (ui.value < 0) {
+                scale = 1 / (1 - ui.value)
+            } else if (ui.value > 0) {
+                scale = 1 + ui.value
+            }
+            $('#frame-wrapper').css({
+                'transform' : 'scale(' + scale + ')',
+                '-moz-transform': 'scale(' + scale + ')',
+                '-ms-transform': 'scale(' + scale + ')',
+                '-webkit-transform': 'scale(' + scale + ')',
+                'transform-origin': '0 0',
+                '-moz-transform-origin': '0 0',
+                '-ms-transform-origin': '0 0',
+                '-webkit-transform-origin': '0 0'
+            })
+            $('#scale .value').html(scale.toFixed(2))
+        }
+    });
+
 	//Device click
 	$('#devices a').click(function() {
 		var deviceWidth = $(this).data('width')
